@@ -36,7 +36,6 @@ input {
   margin: 10% 10px 0;
   border-right: 2px solid #FFF;
   animation: cursor 800ms infinite normal;
-  /* border: 1px solid #FFF; */
 }
 
 button {
@@ -53,12 +52,12 @@ button:hover {
   opacity: 0.8;
 }
 
-button:active {
-  opacity: 0.6;
-}
-
 .gray-button {
   background: #363636;
+}
+
+.black-button {
+  background: #222020;
 }
 
 .equal-button {
@@ -67,18 +66,30 @@ button:active {
   grid-column: 4 / 5;
 }
 
-.black-button {
-  background: #222020;
-}
-
 .zero {
   grid-column: 1/3;
 }
 
+@media screen and (max-width:420px) {
+
+  div {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  button {
+    font-size: 20px;
+  }
+
+  button:hover {
+    opacity: 1;
+  }
+
+}
 
 @keyframes cursor {
   from {
-    border-right-color: #b0adad;
+    border-right-color: #FFF;
   }
 
   to {
